@@ -22,6 +22,7 @@ namespace Phalcon\Events;
  *     $event->stop();
  * }
  * ```
+ * @template TData
  */
 class Event implements EventInterface
 {
@@ -35,7 +36,7 @@ class Event implements EventInterface
     /**
      * Event data
      *
-     * @var mixed
+     * @var TData
      */
     protected data;
 
